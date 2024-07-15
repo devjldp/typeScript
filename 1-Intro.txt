@@ -1,0 +1,4 @@
+TypeScript cannot be executed directly in a runtime environment like JavaScript, as it is a superset of JavaScript and is not natively interpreted by browsers or Node.js. TypeScript needs to be compiled to JavaScript before it can be executed.
+
+When we TypeScript
+tsc nameFile => A new file will be created with .js extension.
