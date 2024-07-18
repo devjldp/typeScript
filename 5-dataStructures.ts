@@ -114,7 +114,42 @@ person.push(43)
 console.log(person)
 
 // Maps
+// Documentation: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
 
-/* Syntax
+/* 
+The Map object holds key-value pairs and remembers the original insertion order of the keys.
 
+Syntax:
+
+    * Creating a map.
+        let mapName: Map<dataTypeKey, datatypeValue> = new Map([[key1, value1],[key2, value2]])
+
+    * Adding a new element. We use the set method
+        mapName.set(Key, value)
+
+    * Access to value. We use the get method
+        mapName.get(key)
+        
+    * Check a key. returns true or false
+        mapName.has(key)
+
+    * Remove an element. We usse the delete method
+        mapName.delete(key)
+    
+    * Get the size of a map. We use the property size
+        mapName.size
 */
+
+let myMap: Map<string, number> = new Map([["Jose", 24], ["Maria", 23]])
+console.log(myMap) // Output: Map(2) { 'Jose' => 24, 'Maria' => 23 }
+
+console.log(myMap.size) // Output: 2
+
+myMap.set("Juan", 28)
+console.log(myMap) // Output: Map(3) { 'Jose' => 24, 'Maria' => 23, 'Juan' => 28 }
+
+console.log(myMap.get('Maria')) // Output: 23
+console.log(myMap.has('Mari0')) // Output: false
+
+myMap.delete("Maria")
+console.log(myMap) // Output: Map(3) { 'Jose' => 24, 'Juan' => 28 }
