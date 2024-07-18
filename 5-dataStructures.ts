@@ -80,3 +80,41 @@ console.log(mySet3) // output: Set(5) { 2, 3, 'dog', 4, 'cat' }
 mySet3.delete("cat")
 console.log(mySet3) // output: Set(4) { 2, 3, 'dog', 4 }
 
+// Tuples
+
+/* 
+    It is a typed array with a predefined length and types for each index.
+
+    Key points:
+    ---------------------
+        * Tuples have a fixed number of elements
+        * Each element in a tuple has a specified type.
+        * Elements are stored in a specific order and can't be reordered.
+
+    Syntax:
+    For two elements 
+    let tupleName: [dataType1, dataType2] = [element1, element2]
+
+*/
+let person: [string, number, boolean] = ["Jose", 25, true]
+console.log(person)
+console.log(person[1])
+// person[1] = 'Oviedo'  => Error: Cannot assign type 'string' to type 'number'
+
+
+/*
+although TypeScript does not allow modifying the length of the tuple or performing operations that can change its structure 
+(like push in arrays), in this case, TypeScript does not produce a compilation error. 
+
+This is due to a peculiarity of TypeScript where it allows additional operations after initialization, 
+although the length or type of the tuple should not be modified in a production scenario.
+*/
+
+person.push(43)
+console.log(person)
+
+// Maps
+
+/* Syntax
+
+*/
