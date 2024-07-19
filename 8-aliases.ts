@@ -88,6 +88,8 @@ const greet: Greet = (name: string) => {
 };
 
 
+console.log(greet('Jose'))
+
 
 
 
