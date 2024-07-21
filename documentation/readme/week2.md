@@ -32,3 +32,9 @@ En el dia de hoy se empezo a estudiar el uso de typescript con diferentes estruc
 
 ### Files:
 - [Data Structures I](../../5-dataStructures.ts)
+
+
+## Day 3
+* Recap basic conepts in TypeScript with first 45 minutes from tutorial Midudev. [Midudev TypeScript Tutorial](https://www.youtube.com/watch?v=fUgxxhI_bvc) 
+### Files:
+- [Tutorial Midudev I](../../midudevTypescriptCourse.ts)
